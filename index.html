@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms-Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="cabeca">
+            <p>Sistema de notas dos alunos</p>
+        </div>
+    </header>
+    <section class="first-box">
+        
+        <form id="formulario" >
+            <div class="form">
+                <ul id="mensagens-erro">            
+                </ul>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome">
+                <label for="nota1">Nota 1</label>
+                <input type="number" name="nota1" id="nota1">
+                <label for="nota2">Nota 2</label>
+                <input type="number" name="nota2" id="nota2">
+                <label for="nota3">Nota 3</label>
+                <input type="number" name="nota3" id="nota3">
+                <button id="adicionar" class="botao">Adicionar</button>
+            </div>
+        </form>
+    </section>
+    <section class="second-box">
+        <table>
+            <div class="fil">
+                <label for="filtrar">Filtrar Aluno:</label>
+                <input type="text" name="filtrar" id="filtrar-aluno" placeholder="Digite o nome do aluno">
+            </div>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Nota 1</th>
+                    <th>Nota 2</th>
+                    <th>Nota 3</th>
+                    <th>Média</th>
+                    <th>Situação</th>
+
+
+                </tr>
+            </thead>
+                <tr class="aluno">
+                    <td class="info-nome">Vitor Gabriel Gomes Abrantes</td>
+                    <td class="info-nota1">10</td>
+                    <td class="info-nota2">10</td>
+                    <td class="info-nota3">10</td>
+                    <td class="info-media">10.00</td>
+                    <td class="info-situacao">Aprovado</td>
+                </tr>
+            <tbody id="tabela-body" class="alunos"></tbody>
+
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="form.js"></script>
+</body>
+</html>
